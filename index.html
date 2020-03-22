@@ -5,31 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Landing page for Zenith app and website.">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Zenith</title>
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav__ctn">
-        <img class="nav__img" src="zenith-logo.png" alt="Zenith logo">
-        <div class="bar__top">
-            <hr>
+    <header class="header__ctn" id="home">
+        <div>
+            <img class="nav__img" src="zenith-logo.png" alt="Zenith logo">
         </div>
-        <div class="bar__btm">
-            <hr>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#"></a>Features</li>
+                <li><a href="#"></a>Integrations</li>
+                <button><a href="#"></a>Get Zenith</button>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+   <hero class="hero">
+          <div class="hero__bkgrd">
+            <img src="/hero-bg-texture.png">
         </div>
-    </div>
-    <hero class="hero">
-        <h1>All your communication. One place.</h1>
-        <div class="hero__bkgr">
-            <img src="/hero-bg-texture.png" alt="main background image">
+         <div class="hero__header">
+            <h1>All your communication. One place.</h1>
         </div>
         <div class="hero__info">
             <img src="/inbound-card.png">
         </div>
     </hero>
-    <section class="features">
-        <h2>The feautures that matter</h2>
+    <!--<section class="features">
+        <h2 class="features__hdr">The features that matter</h2>
         <div class="card__ctn">
             <div class="card1">
                 <p>Mark all your completed threads in one place</p>
@@ -68,17 +78,16 @@
             </div>
         </div>
     </section>
-    <footer class="footer_ctn">
+    <footer class="footer">
         <h2>Stay up to date</h2>
         <div class="form__ctn">
             <form action="action_page.php">
                 <label for="email"></label>
-                <input type="email" id ="email" name="email" placeholder="Email">
+                <input type="email" id="email" name="email" placeholder="Email">
                 <input type="submit" value="Submit">
             </form>
         </div>
-    </footer>
-    </nav>
+    </footer> -->
 </body>
 
 </html>

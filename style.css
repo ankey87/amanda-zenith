@@ -1,8 +1,206 @@
-.nav__img {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Futura;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
   position: absolute;
-  width: 160px;
-  height: 45px;
-  left: 15px;
-  top: 45px;
+  top: 63px;
+  right: 50px;
+  height: 100%;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before {
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#AB00FF), to(#007BFF));
+  background: linear-gradient(#AB00FF, #007BFF);
+  height: 1px;
+  border-radius: 3px;
+  margin: 0 .938em 0 0;
+}
+
+.nav-toggle-label span {
+  width: 1.750em;
+  right: 40px;
+  margin-bottom: .5em;
+}
+
+.nav-toggle-label span::before {
+  width: 2.29em;
+  right: 9px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 100%;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  right: 60px;
+  top: 75px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 0 1.5em 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav button {
+  font-family: Futura;
+  background: linear-gradient(196.2deg, #AB00FF -34.29%, #007BFF 136.11%);
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.24);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.24);
+  border-radius: 100px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  padding-bottom: .5em;
+}
+
+.nav-toggle-label span::before {
+  content: '';
+  position: relative;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle:checked ~ nav {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  -webkit-transition: opacity 250ms ease-in-out 250ms;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav__img {
+  width: 25%;
+  margin: 2.813em 0 0 .938em;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__backgrd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__bkgrd img {
+  position: relative;
+  width: 90%;
+  height: 481px;
+  top: 189px;
+}
+
+.hero__header {
+  position: relative;
+  width: 40%;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  color: #393939;
+  bottom: 320px;
+  margin: 0 0 0 .938em;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__info img {
+  position: relative;
+  width: 75%;
+  -webkit-box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=style.css.map */
